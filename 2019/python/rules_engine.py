@@ -3365,8 +3365,3 @@ class rules_engine(object):
 		fail_df = self.lar_df[(self.lar_df.loan_purpose == '1') &
 		(self.loan_amount.apply(lambda x: int(loan_amount) < 1000))]
 		self.results_wrapper(edit_name=edit_name, field_name=field, fail_df=fail_df)
-
-
-
-
-
